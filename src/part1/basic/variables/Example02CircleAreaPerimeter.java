@@ -1,6 +1,8 @@
+package part1.basic.variables;
+
 import java.util.Scanner;
 
-public class bai2 {
+public class Example02CircleAreaPerimeter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

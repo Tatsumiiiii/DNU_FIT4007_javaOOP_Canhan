@@ -1,6 +1,8 @@
+package part1.basic.variables;
+
 import java.util.Scanner;
 
-public class bai5 {
+public class Example05BirthYearFromAge {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int your_birth_year= sc.nextInt();

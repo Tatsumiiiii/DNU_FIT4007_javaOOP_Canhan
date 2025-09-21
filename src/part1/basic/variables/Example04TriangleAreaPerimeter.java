@@ -1,6 +1,8 @@
+package part1.basic.variables;
+
 import java.util.Scanner;
 
-public class bai4 {
+public class Example04TriangleAreaPerimeter {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         double side1= sc.nextDouble();
