@@ -1,7 +1,7 @@
 package part1.basic.variables;
 import java.util.Scanner;
 
-public class Example11SwapWithTemp {
+public class Example12SwapWithoutTemp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -13,9 +13,10 @@ public class Example11SwapWithTemp {
 
         System.out.println("Trước khi hoán đổi: a = " + a + ", b = " + b);
 
-        int c = a;
-        a = b;
-        b = c;
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
 
         System.out.println("Sau khi hoán đổi: a = " + a + ", b = " + b);
     }
