@@ -1,6 +1,6 @@
 package part5.array;
 import java.util.Scanner;
-public class Example03ReverseArray {
+public class Example07MinMaxArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap so phan tu:");
@@ -12,11 +12,20 @@ public class Example03ReverseArray {
             a[i]= sc.nextInt();
         }
 
-        System.out.println("Mảng vừa nhập là:");
-        for (int i = n-1; i > -1; i--){
-            System.out.print(a[i] + " ");
-
+        int min=a[0];
+        int max=a[0];
+        for (int i=0;i<n;i++){
+            if(a[i]>max){
+                max=a[i];
+            }
         }
+        for (int i=0;i<n;i++){
+            if(a[i]<min){
+                min=a[i];
+            }
+        }
+        System.out.println("Phan tu lon nhat:"+max);
+        System.out.println("Phan tu nho nhat:"+min);
         sc.close();
     }
 }

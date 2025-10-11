@@ -1,6 +1,6 @@
 package part5.array;
 import java.util.Scanner;
-public class Example03ReverseArray {
+public class Example08MaxCount {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap so phan tu:");
@@ -12,11 +12,20 @@ public class Example03ReverseArray {
             a[i]= sc.nextInt();
         }
 
-        System.out.println("Mảng vừa nhập là:");
-        for (int i = n-1; i > -1; i--){
-            System.out.print(a[i] + " ");
-
+        int max=a[0];
+        for (int i=0;i<n;i++){
+            if(a[i]>max){
+                max=a[i];
+            }
         }
+        int count=0;
+        for (int i=0;i<n;i++){
+            if(a[i]==max){
+                count++;
+            }
+        }
+        System.out.println("Phan tu lon nhat:"+max);
+        System.out.println("So lan xuat hien:"+count);
         sc.close();
     }
 }
